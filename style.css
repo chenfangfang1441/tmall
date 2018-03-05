@@ -403,6 +403,7 @@ li{ list-style-type:none;}
     height: 31.25px;
     line-height: 31.25px;
     color:#fff;
+    padding-left: 40px;
 }
 .classification-list ul li:hover{
     background-color: #fff;
@@ -410,25 +411,25 @@ li{ list-style-type:none;}
 .classification-list a{
     color: #fff;
 }
-.classification-list ul li.DeepPink-li:hover,.classification-list ul li.DeepPink-li:hover a,.DeepPink{
+.DeepPink-li:hover,.DeepPink-li:hover > a,.word-list-con a.DeepPink,.word-list-con a:hover{
     color: #e54077;
 }
-.classification-list ul li.DodgerBlue-li:hover,.classification-list ul li.DodgerBlue-li:hover a,.DodgerBlue{
+.DodgerBlue-li:hover,.DodgerBlue-li:hover > a,.word-list-con a.DodgerBlue{
     color:#427def;
 }
-.classification-list ul li.DarkSlateBlue-li:hover,.classification-list ul li.DarkSlateBlue-li:hover a,.DarkSlateBlue{
+.DarkSlateBlue-li:hover,.DarkSlateBlue-li:hover > a,.word-list-con a.DarkSlateBlue{
     color:#6347ed;
 }
-.classification-list ul li.Tomato-li:hover,.classification-list ul li.Tomato-li:hover a,.Tomato{
+.Tomato-li:hover,.Tomato-li:hover > a,.word-list-con a.Tomato{
     color:#fa5c5c;
 }
-.classification-list ul li.Orange-li:hover,.classification-list ul li.Orange-li:hover a,.Orange{
+.Orange-li:hover,.Orange-li:hover > a,.word-list-con a.Orange{
     color:#f7a831;
 }
-.classification-list ul li.Crimson-li:hover,.classification-list ul li.Crimson-li:hover a,.Crimson{
+.Crimson-li:hover,.Crimson-li:hover > a,.word-list-con a.Crimson{
     color:#dd2727;
 }
-.classification-list ul li.Aquamarine-li:hover,.classification-list ul li.Aquamarine-li:hover a,.Aquamarine{
+.Aquamarine-li:hover,.Aquamarine-li:hover > a,.word-list-con a.Aquamarine{
     color:#3bc7b0;
 }
 
@@ -436,12 +437,12 @@ li{ list-style-type:none;}
 .subclassification-list{
     width: 852px;
     height: 500px;
-    background-color: rgb(251, 255, 131);
+    background-color: #fff;
     color: #666;
     position: absolute;
     left: 200px;
     top: 0;
-    /*display: none;*/
+    display: none;
 }
 .DeepPink-li:hover .subclassification-list{
     display: block;
@@ -491,20 +492,21 @@ li{ list-style-type:none;}
     width: 189px;
     height: 480px;
     padding: 10px;
-    background-color: #aaa;
+    background-color: #fafafa;
 }
 .sub-logo ul{
     width: 189px;
     height: 384px;
     display: block;
-    background-color: #aaa;
+    background-color: #fafafa;
 }
 .sub-logo ul li{
     height: 47px;
     display: block;
     float: left;
-    background-color: #ccc;
+    background-color: #fff;
     margin: 0 1px 1px 0;
+    padding:0;
 }
 .sub-logo ul li a{
     display: block;
