@@ -3,7 +3,7 @@ body {
 	padding:0px;
 	margin:0px;
 	font:12px/1.5 Tahoma,Arial,"微软雅黑",sans-serif;
-	background-color:#fff;
+	background-color:#f5f5f5;
 	color:#666;
 }
 
@@ -13,17 +13,35 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h4, h5, h6, input, button, textarea, 
 a{ text-decoration:none; }
 ul{ list-style-type:none;}
 img{ 
-	vertical-align:middle; 
-	border:0;
+    vertical-align:middle;
+    border:0;
+}
+em, i {
+    font-style: normal;
 }
 .clear{ 
 	clear:both; 
 	height:0; line-height:0; 
 	font-size:0;
 }
+/* 全浏览器通用的clearfix方案【推荐】
+引入了zoom以支持IE6/7
+同时加入:before以解决现代浏览器上边距折叠的问题 */
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
 .fl{float:left; }
 .fr{float:right; }
 li{ list-style-type:none;}
+
 
 
 .top-nav-box{ 
@@ -131,7 +149,7 @@ li{ list-style-type:none;}
     position: absolute;
     top: 24px;
     left: -50px;
-    z-index: 1;
+    z-index: 3;
     
 }
 .phone-img i{
@@ -173,7 +191,7 @@ li{ list-style-type:none;}
     color: #666;
     padding-bottom: 10px;
     background-color: #fff;
-    z-index: 1;
+    z-index: 3;
 }
 .down-business-content a:hover{
     text-decoration: underline;
@@ -223,7 +241,7 @@ li{ list-style-type:none;}
     top:33px;
     padding: 20px 0;
     background-color: #fff;
-    z-index: 1;
+    z-index: 3;
 }
 .down-list-menu:hover .down-content-menu{ 
     display: block;
@@ -365,6 +383,9 @@ li{ list-style-type:none;}
     line-height: 36px;
     padding: 0 10px;
 }
+.nav ul li a:hover{
+    color: #ff0036;
+}
 .nav img{
     width: 100px;
     height: 30px;
@@ -375,6 +396,7 @@ li{ list-style-type:none;}
     width: 1230px;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
 }
 .classification-con{
     position: absolute;
@@ -445,6 +467,9 @@ li{ list-style-type:none;}
     display: none;
 }
 .DeepPink-li:hover .subclassification-list{
+    display: block;
+}
+.DodgerBlue-li:hover .subclassification-list{
     display: block;
 }
 .word-list-title{
@@ -530,4 +555,234 @@ li{ list-style-type:none;}
 }
 .nav-ad img{
     width: 100%;
+}
+/*banner轮播*/
+ .baner-box{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
+}
+ .banner{
+     width:5760px;
+     position: absolute;
+     left:0;
+     animation-name: bannerMove;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+}
+ @keyframes bannerMove {
+    0%{left: 0px;}
+    17%{left: 0px;}
+    34%{left: -1920px;}
+    51%{left: -1920px;}
+    68%{left: -3840px;}
+    85%{left: -3840px;}
+    100%{left: 0px;}
+ }
+ .banner li{
+    float: left; 
+    width: 1920px;
+    height: 500px;
+} 
+/* 主体内容 */
+.main{
+    width: 1230px;
+    margin: 0 auto;
+}
+/* 女神节广告 */
+.page-title a{
+    height: 105px;
+    display: block;
+    background: url(images/adtit.png) center center no-repeat;
+    background-size: 300px 65px;
+}
+.page-list span{
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+}
+.ad-title{
+    margin-top: 39px;
+}
+.page-list em{
+    display: block;
+    font-size: 18px;
+}
+.page-content a{
+    box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+}
+.page-item-vertical,.page-item-horizontal{
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.page-item-vertical{
+    width: 250px;
+    height: 330px;
+    text-align: center;
+    background-image: url(images/ad_01.png);
+}
+
+.item-pic{
+    width: 180px;
+    height: 180px;
+    margin: 20px auto 0;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page-item-horizontal{
+    width: 350px;
+    height: 160px;
+    margin-left: 10px;
+    background-image: url(images/ad_04.png);
+}
+.horizontal-word{
+    margin: 35px 0  0 30px;
+}
+.page-item-horizontal em{
+    margin-left: 30px;
+}
+.item-pic-horizontal{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.DarkViolet{
+    color: #8C0BEF;
+}
+.FireBrick{
+    color: #d30d0d;
+}
+.Green{
+    color: #179510;
+}
+/* 楼层品牌墙 */
+.brandWall-box{
+    margin-top: 30px;
+}
+.brandWall-title{
+    padding: 13px 15px 13px 10px;
+    background-color: #fff;
+}
+.brandWall-title span{
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+}
+.brandWall-title em{
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+    height: 28px;
+    line-height: 29px;
+    display: inline-block;
+}
+.brandWall-title a{
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    background: url(images/brandWal_01.png) right center no-repeat ;
+    background-size: 18px 18px;
+    font-size: 16px;
+    color: #666;
+}
+.brandWall-small-con a{
+    width: 234px;
+    height: 316px;
+    display: block;
+}
+.brandWall-box img{
+    width: 100%;
+    height: 316px;
+}
+.brandWall-box img:hover{
+    opacity: 0.8;
+}
+.brandWall-big{
+    margin-left: 13px;
+}
+.brandWall-big-con a{
+    width: 485px;
+    height: 316px;
+    display: block;
+}
+/* 品牌广告 */
+.brand-list{
+    margin-top: 15px;
+}
+.brand-list ul{
+    width: 1230px;
+    display: block;
+}
+.brand-list li{
+    float: left;
+    margin: 0 1px 1px 0;
+    background-color: #fff;
+    height: 108px;
+    line-height: 108px;
+    width: 122px;
+    position: relative;
+}
+.brand-list span,.brand-list a,.refresh-btn{
+    width: 122px;
+    height: 108px;
+    text-align: center;
+    display: block;
+}
+.brand-list span img{
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+.brand-a{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+.brand-list a:hover{
+    opacity: 1;
+}
+.word{
+    height: 60px;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+}
+.enter{
+    color: #fff;
+    width: 63px;
+    height: 18px;
+    line-height: 15px;
+    background-color: #FF0036;
+    border-radius: 9px;
+    margin: 0 auto;
+}
+.refresh-btn i{
+    width: 25px;
+    height: 25px;
+    color: #999;
+    line-height: 15px;
+    display: block;
+    margin: 33px auto 0;
+}
+.refresh-word{
+    width: 63px;
+    height: 18px;
+    line-height: 15px;
 }
