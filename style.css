@@ -434,7 +434,7 @@ li{ list-style-type:none;}
     color: #fff;
 }
 .DeepPink-li:hover,.DeepPink-li:hover > a,.word-list-con a.DeepPink,.word-list-con a:hover{
-    color: #e54077;
+    color:#e54077;
 }
 .DodgerBlue-li:hover,.DodgerBlue-li:hover > a,.word-list-con a.DodgerBlue{
     color:#427def;
@@ -736,7 +736,7 @@ li{ list-style-type:none;}
     width: 122px;
     position: relative;
 }
-.brand-list span,.brand-list a,.refresh-btn{
+.brand-list span,.brand-a{
     width: 122px;
     height: 108px;
     text-align: center;
@@ -755,7 +755,7 @@ li{ list-style-type:none;}
     opacity: 0;
     transition: all .3s ease-out;
 }
-.brand-list a:hover{
+.brand-a:hover{
     opacity: 1;
 }
 .word{
@@ -773,16 +773,98 @@ li{ list-style-type:none;}
     border-radius: 9px;
     margin: 0 auto;
 }
-.refresh-btn i{
-    width: 25px;
+.refresh-btn{
+    display: block;
+    text-align: center;
+    height: 75px;
+    padding-top: 33px;
+}
+.refresh-icon{
+    width: 122px;
     height: 25px;
-    color: #999;
     line-height: 15px;
     display: block;
-    margin: 33px auto 0;
+    transition: all 0.5s ease 0s;
+    background: url(images/refresh_01.png) center bottom no-repeat;
 }
 .refresh-word{
-    width: 63px;
     height: 18px;
     line-height: 15px;
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.refresh-btn:hover{
+    background-color: #ff0036;
+}
+.refresh-btn:hover .refresh-word{
+    color: #fff;
+}
+.refresh-btn:hover .refresh-icon{
+    background: url(images/refresh_02.png) center bottom no-repeat;
+    transform: rotate(360deg);
+}
+/* 天猫超市 */
+.tmallmart{
+    margin-top: 25px;
+}
+.tmallmart-title-l img{
+    width: 214px;
+    height: 25px;
+}
+.tmallmart-title-r ul{
+    display: block;
+}
+.tmallmart-title-r li{
+    float: left;
+    display: block;
+    margin: 0 10px;
+}
+.tmallmart-title-r a{
+    color: #000;
+}
+.tmallmart-title-r a:hover{
+    text-decoration: underline;
+}
+.tmallmart-con{
+    margin-top: 10px;
+}
+.tmallmart-l-ad{
+    display: block;
+    position: relative;
+}
+.tmallmart-l-word{
+    position: absolute;
+    top: 430px;
+    left: 0;
+}
+.tmallmart-l-ad span{
+    width: 36px;
+    height: 48px;
+    display: block;
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    font-size: 18px;
+    float: left;
+    padding: 8px 17px;
+    line-height: 23px;
+}
+.tmallmart-l-ad i{
+    width: 100px;
+    height: 48px;
+    display: block;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 18px;
+    float: left;
+    padding: 8px 0 8px 14px;
+    line-height: 23px;
+}
+.tmallmart-l-ad img{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.tmallmart-l-ad:hover img{
+    opacity: 0.7;
+    /* transition: all 0.5s ease-in-out; */
 }
