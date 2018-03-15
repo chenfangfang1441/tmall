@@ -822,9 +822,11 @@ li{ list-style-type:none;}
 }
 .tmallmart-title-r a{
     color: #000;
+    font-size: 14px;
+    line-height: 20px;
 }
 .tmallmart-title-r a:hover{
-    text-decoration: underline;
+    border-bottom: 1px solid #333;
 }
 .tmallmart-con{
     margin-top: 10px;
@@ -866,5 +868,88 @@ li{ list-style-type:none;}
 }
 .tmallmart-l-ad:hover img{
     opacity: 0.7;
-    /* transition: all 0.5s ease-in-out; */
+}
+.floor-arrow-big{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.tmallmart-con-r{
+    width: 995px;
+}
+/* 选项卡切换广告 */
+.tab-ad{
+    width: 464px;
+    height: 282px;
+    padding: 10px;
+    background-color: #fff;
+    margin-left: 13px;
+}
+.tab-ad ul{
+    width: 462px;
+    height: 282px;
+    display: block;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.09);
+}
+.tab-ad-title{
+    background-color: #00B262;
+}
+
+.ad-item{
+    width: 234px;
+    height: 300px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 0 0 13px 12px;
+    cursor: pointer;
+}
+.ad-item:hover{
+    border: 1px solid #FF0036;
+}
+.ad-img{
+    margin-top: 20px;
+}
+.ad-item:hover .ad-img{
+    opacity: .7;
+}
+.ad-item-title{
+    width: 135px;
+    height: 40px;
+    overflow: hidden;
+    margin: 8px auto;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.ad-item-price{
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+}
+
+.ad-banner{
+    margin-top: 10px;
+}
+.tmallmart-title-l i{
+    width: 5px;
+    height: 18px;
+    display: inline-block;
+    background-color: #EA5F8D;
+    vertical-align: middle;
+}
+.tmallmart-title-l span{
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.tmallmart-title-l em{
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
 }
